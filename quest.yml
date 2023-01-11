@@ -15,7 +15,9 @@ messages:
   questFinished:
     person: head-of-rd
     messages:
-      - text: "Beautiful! Can't believe you've already finished another project! As usual, make sure you stretch your body and treat yourself to something yummy, before we set you up with [something new](${platform.home}) to work on."
+      - text: "Beautiful! Can't believe you already finished another task."
         delay: 1500
-      - text: "[Click here](${platform.home}) once you're ready for your next project!"
+      - text: "**Next up: time to select your next task!**"
         delay: 1000
+        components:
+        - type: schedule_learning_time
